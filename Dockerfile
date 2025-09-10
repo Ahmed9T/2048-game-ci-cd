@@ -2,10 +2,11 @@
 FROM nginx:latest
 
 # Copy the 2048 game files to the Nginx web root
-COPY . /usr/share/nginx/html/sitemap.xml
+COPY . /usr/share/nginx/html/sites-available/
 
 # Expose the default Nginx HTTP port
 EXPOSE 80
 
 # Start Nginx when the container starts
 CMD ["nginx", "-g", "daemon off;"]
+
