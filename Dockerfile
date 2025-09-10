@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Copy the 2048 game files to the Nginx web root
-COPY . /usr/share/nginx/html
+COPY . /usr/share/nginx/html/sitemap.xml
 
 # Expose the default Nginx HTTP port
 EXPOSE 80
